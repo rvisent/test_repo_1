@@ -1,3 +1,5 @@
-# test_repo_1
-test repository to learn GIT
-questa è una prova
+Test git repository by RV
+===========================================
+
+# Contents
+- *star* MFC program

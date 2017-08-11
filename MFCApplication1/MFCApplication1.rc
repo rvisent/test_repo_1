@@ -1,0 +1,305 @@
+//script di risorsa generato con Microsoft Visual C++.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generato dalla risorsa TEXTINCLUDE 2.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)\r\n"
+    "LANGUAGE 16, 1\r\n"
+    "#include ""res\\MFCApplication1.rc2""  // risorse non modificate con Microsoft Visual C++\r\n"
+    "#include ""l.ITA\\afxres.rc""      // Componenti standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icona
+//
+
+// Icona con il valore ID minimo posto per primo in modo da garantire che l'icona dell'applicazione
+// rimanga la stessa in tutti i sistemi.
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE 16, 1
+IDR_MAINFRAME           ICON         "res\\MFCApplication1.ico"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Barra degli strumenti
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE 16, 1
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Esci",                       ID_APP_EXIT
+    END
+    POPUP "&Modifica"
+    BEGIN
+        MENUITEM "&Annulla\tCTRL+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Ta&glia\tCTRL+X",                ID_EDIT_CUT
+        MENUITEM "&Copia\tCTRL+C",               ID_EDIT_COPY
+        MENUITEM "&Incolla\tCTRL+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Visualizza"
+    BEGIN
+        MENUITEM "&Barra degli strumenti",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Barra di stato",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&Informazioni su MFCApplication1...",          ID_APP_ABOUT
+    END
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Tasto di scelta rapida
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY,CONTROL,NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL,NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT,NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT,NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY ,NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT,NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL,NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT,NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY,CONTROL,NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL,NOINVERT
+END
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Finestra di dialogo
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Informazioni su MFCApplication1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "MFCApplication1, versione 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Versione
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+ FILEFLAGS VS_FF_DEBUG
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041004B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nome società>"
+            VALUE "FileDescription", "MFCApplication1"
+            VALUE "FileVersion",     "1.0.0.1"
+            VALUE "InternalName",    "MFCApplication1.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Nome società>.  Tutti i diritti riservati."
+            VALUE "OriginalFilename","MFCApplication1.exe"
+            VALUE "ProductName", "TODO: <Nome prodotto>"
+            VALUE "ProductVersion",  "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0410, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Tabella delle stringhe
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED       "Inizializzazione OLE non riuscita.  Assicurarsi che la versione delle librerie OLE sia corretta."
+END
+STRINGTABLE
+BEGIN
+// Le applicazioni non mac rimuovono le due sottostringhe eccedenti.
+    IDR_MAINFRAME           "MFCApplication1"
+END
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "MFCApplication1"
+    AFX_IDS_IDLEMESSAGE     "Pronto"
+END
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Visualizza informazioni sul programma, il numero di versione e il copyright.\nInformazioni su"
+    ID_APP_EXIT             "Chiude l'applicazione e chiede di salvare i documenti.\nEsci"
+    ID_NEXT_PANE            "Passa al riquadro successivo.\nSuccessivo"
+    ID_PREV_PANE            "Torna al riquadro precedente.\nPrecedente"
+    ID_WINDOW_SPLIT         "Suddivide la finestra attiva in riquadri.\nDividi"
+    ID_EDIT_CLEAR           "Cancella la selezione.\nCancella"
+    ID_EDIT_CLEAR_ALL       "Cancella tutto.\nCancella tutto"
+    ID_EDIT_COPY            "Copia la selezione e la inserisce negli Appunti.\nCopia"
+    ID_EDIT_CUT             "Taglia la selezione e la inserisce negli Appunti.\nTaglia"
+    ID_EDIT_FIND            "Trova il testo specificato.\nTrova"
+    ID_EDIT_PASTE           "Inserisce il contenuto degli Appunti.\nIncolla"
+    ID_EDIT_REPEAT          "Ripete l'ultima operazione.\nRipeti"
+    ID_EDIT_REPLACE         "Sostituisce il testo specificato con altro testo.\nSostituisci"
+    ID_EDIT_SELECT_ALL      "Seleziona l'intero documento.\nSeleziona tutto"
+    ID_EDIT_UNDO            "Annulla l'ultima operazione.\nAnnulla"
+    ID_EDIT_REDO            "Ripristina il risultato dell'ultima azione annullata.\nRipristina"
+    ID_VIEW_TOOLBAR         "Mostra o nasconde la barra degli strumenti.\nBarra degli strumenti"
+    ID_VIEW_STATUS_BAR      "Mostra o nasconde la barra di stato.\nBarra di stato"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Cambia le dimensioni della finestra."
+    AFX_IDS_SCMOVE          "Cambia la posizione della finestra."
+    AFX_IDS_SCMINIMIZE      "Riduce la finestra a icona."
+    AFX_IDS_SCMAXIMIZE      "Ingrandisce la finestra a schermo intero."
+    AFX_IDS_SCNEXTWINDOW    "Passa alla finestra del documento successiva."
+    AFX_IDS_SCPREVWINDOW    "Passa alla finestra del documento precedente."
+    AFX_IDS_SCCLOSE         "Chiude la finestra attiva e chiede di salvare i documenti."
+    AFX_IDS_SCRESTORE       "Ripristina le dimensioni normali della finestra."
+    AFX_IDS_SCTASKLIST      "Attiva l'Elenco attività."
+END
+
+
+#endif
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generato dalla risorsa TEXTINCLUDE 3.
+//
+
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE 16, 1
+#include "res\\MFCApplication1.rc2"  // risorse non Microsoft Visual C++ modificate
+#include "l.ITA\\afxres.rc"      // Componenti standard
+#endif
+#endif    // non APSTUDIO_INVOKED
